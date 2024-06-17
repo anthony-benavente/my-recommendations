@@ -16,16 +16,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'smart-playlist-creator'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('smart-playlist-creator');
-  });
-
-  it('should render title', () => {
+  it('should display the generate button', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('smart-playlist-creator app is running!');
+    expect(compiled.querySelector('btn btn-default')?.textContent).toContain('Generate');
   });
 });
