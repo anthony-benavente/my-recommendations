@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'smart-playlist-creator';
+
+  click_generate() {
+    alert('Generate clicked.');
+  }
 }
